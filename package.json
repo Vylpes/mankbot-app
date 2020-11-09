@@ -1,0 +1,22 @@
+{
+  "name": "mankbot-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mankbot.js",
+  "scripts": {
+    "test": "echo \"No tests\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vylpes/mankbot-app.git"
+  },
+  "author": "Vylpes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vylpes/mankbot-app/issues"
+  },
+  "homepage": "https://github.com/Vylpes/mankbot-app#readme",
+  "dependencies": {
+    "vylbot-core": "^1.0.4"
+  }
+}
