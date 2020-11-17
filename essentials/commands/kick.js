@@ -59,7 +59,6 @@ class kick extends command {
 
                             // Attemtp to kick the user, if successful send the embeds, if unsuccessful notify the chat and log the error
                             member.kick({ reason: reason }).then(() => {
-                                context.message.guild.channels.cache.find(channel => channel.name == context.client.config.kick.logchannel).send(embedLog);
                                 context.message.channel.send(embedPublic);
 
                                 context.message.delete();
