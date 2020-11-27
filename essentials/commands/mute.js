@@ -17,6 +17,7 @@ class mute extends command {
         super.requiredConfigs = "modrole";
         super.requiredConfigs = "logchannel";
         super.requiredConfigs = "muterole";
+        super.requiredConfigs = "mutechannel"
     }
 
     // The command's run method
@@ -56,6 +57,11 @@ class mute extends command {
                             // The embed to go into the channel the command was sent in
                             let embedPublic = new MessageEmbed()
                                 .setColor(embedColor)
+                                .setDescription(`${user} has been muted`);
+
+                            // The embed to go into the muted channel
+                            let embedMuted = new MessageEmbed()
+                                .setColor(embedColor)
                                 .setDescription(`${user} has been muted`)
                                 .addField("Reason", reason || "*none*");
 
@@ -65,6 +71,7 @@ class mute extends command {
                             // Attempt to mute the user, if successful send the embeds, if not log the error
                             member.roles.add(mutedRole, reason).then(() => {
                                 context.message.guild.channels.cache.find(channel => channel.name == context.client.config.mute.logchannel).send(embedLog);
+                                context.message.guild.channels.cache.find(channel => channel.name == context.client.config.mute.mutechannel).send(embedMuted);
                                 context.message.channel.send(embedPublic);
 
                                 context.message.delete();
