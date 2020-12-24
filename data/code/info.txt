@@ -1,0 +1,23 @@
+    1. You can assign yourself a game role in *#self-assign-roles*. When you want to setup a lobby type m!lobby into the game's channel.
+        1a. Do not ping a role excessively in a short time. The command's cooldown is 20 minutes.
+        1b. Only use the ping to set up lobbies. Not for advertising, pointless announcements, etc.
+        1c. Only give yourself a role if you don't mind Discord pings.
+        1d. Do not complain about the pings if they're being used correctly. Remove the role, or you will be punished by moderators.
+
+    2. Only server staff can use @ everyone & @ here.
+    3. If you are a Youtube Sponsor or Twitch Subscriber, you can get the role if you sync your Twitch/Youtube account with your Discord account
+        by going into User Settings > Connections > Twitch/Youtube.
+        3a. This might not work on mobile.
+        3b. We cannot assign SponSub roles manually.
+
+4. Mankalor will ping @ notificationsquad for new videos and streams in #new-videos-streams. If you want these pings, type !togglevideopings in #self-assign-roles
+        
+5. Server link in case you want to invite someone. This link is in the description of my videos, too: https://discord.gg/DQkWVbz
+
+Not following these rules will result in a warning, mute, or ban, depending on the severity and number of offenses.
+
+If you notice anything wrong, notify the *Server Staff*!
+
+Once you've sent the code, go say hi in *#general-off-topic*!
+
+**Entry Code: ${CODE}**

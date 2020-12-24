@@ -4,6 +4,7 @@
   "description": "",
   "main": "mankbot.js",
   "scripts": {
+    "start": "node mankbot.js",
     "test": "echo \"No tests\""
   },
   "repository": {
