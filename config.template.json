@@ -1,0 +1,102 @@
+{
+    "token": "",
+    "prefix": "m!",
+    "commands": [
+        "essentials/commands",
+        "commands"
+    ],
+    "events": [
+        "events"
+    ],
+    "code": {
+        "codefile": "data/code/code.txt",
+        "rulesfile": "data/code/rules.txt",
+        "infofile": "data/code/info.txt",
+        "ruleschannel": "rules-and-info"
+    },
+    "entry": {
+        "entrychannel": "entry"
+    },
+    "lobby": {
+        "lobbyfile": "data/lobby/lobby.json",
+        "channels": [
+            {
+                "name": "Mario Kart Tour",
+                "channel": "mario-kart-tour",
+                "role": "658114854460194844"
+            },
+            {
+                "name": "Mario Kart 8 Deluxe",
+                "channel": "mario-kart-8-deluxe",
+                "role": "501444085320777728"
+            },
+            {
+                "name": "Mario Kart 8 Wii U",
+                "channel": "mario-kart-8-wiiu",
+                "role": "501444186264961065"
+            },
+            {
+                "name": "Mario Kart 7",
+                "channel": "mario-kart-7",
+                "role": "501444273690902530"
+            },
+            {
+                "name": "Mario Kart Wii",
+                "channel": "mario-kart-wii",
+                "role": "501444337893376010"
+            },
+            {
+                "name": "Mario Kart DS",
+                "channel": "mario-kart-ds",
+                "role": "501442731696979968"
+            },
+            {
+                "name": "Splatoon 2",
+                "channel": "splatoon",
+                "role": "501444611949068299"
+            },
+            {
+                "name": "Smash Ultimate",
+                "channel": "smash-bros",
+                "role": "520984811394039829"
+            },
+            {
+                "name": "Pokemon",
+                "channel": "pokemon",
+                "role": "501445210392494091"
+            },
+            {
+                "name": "Super Mario Maker 2 Multiplayer",
+                "channel": "super-mario-maker-2",
+                "role": "593506736678240272"
+            }
+        ]
+    },
+    "about": {
+        "description": "Discord bot for Mankalor, based on VylBot",
+        "version": "2.0 Beta",
+        "author": "Vylpes",
+        "date": "20-Dec-20"
+    },
+    "ban": {
+        "modrole": "Server Staff",
+        "logchannel": "ban-reason-list"
+    },
+    "clear": {
+        "modrole": "Server Staff"
+    },
+    "kick": {
+        "modrole": "Server Staff"
+    },
+    "Mute": {
+        "modrole": "Server Staff",
+        "logchannel": "mute-reason-list"
+    },
+    "Unmute": {
+        "modrole": "Server Staff"
+    },
+    "Warn": {
+        "modrole": "Server Staff",
+        "logchannel": "warn-reason-list"
+    }
+}
