@@ -18,7 +18,7 @@ class lobby extends command {
     lobby(context) {
         let channelname = context.channel.name;
         let lobbyfile = readFileSync(context.client.config.lobby.lobbyfile);
-        let lobbyjson = JSON.parse(lobbyFile);
+        let lobbyjson = JSON.parse(lobbyfile);
 
         for (let i = 0; i < context.client.config.lobby.channels.length; i++) {
             if (context.client.config.lobby.channels[i].channel == channelName) {
