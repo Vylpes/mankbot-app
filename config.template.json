@@ -2,7 +2,6 @@
     "token": "",
     "prefix": "m!",
     "commands": [
-        "essentials/commands",
         "commands"
     ],
     "events": [
