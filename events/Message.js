@@ -1,9 +1,6 @@
 const { event } = require('vylbot-core');
-const { MessageEmbed } = require('discord.js');
-const { readFileSync, read } = require('fs');
-const { config } = require('process');
+const { readFileSync } = require('fs');
 
-const embedColor = "0x3050ba";
 const entry = "entry";
 const access = "access";
 const codefile = "./data/code/code.txt";

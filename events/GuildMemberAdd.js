@@ -1,7 +1,6 @@
 const { event } = require('vylbot-core');
 const { MessageEmbed } = require('discord.js');
 const { readFileSync } = require('fs');
-const { config } = require('process');
 
 const embedColor = "0x3050ba";
 const watchlistpath = "./data/watchlist.json";

@@ -1,9 +1,5 @@
 const { command } = require('vylbot-core');
-const { MessageEmbed } = require ('discord.js');
 const { readFileSync, writeFileSync } = require('fs');
-const { config } = require('process');
-
-const embedColor = "0x3050ba";
 
 class lobby extends command {
     constructor() {
@@ -21,7 +17,7 @@ class lobby extends command {
         let lobbyjson = JSON.parse(lobbyfile);
 
         for (let i = 0; i < context.client.config.lobby.channels.length; i++) {
-            if (context.client.config.lobby.channels[i].channel == channelName) {
+            if (context.client.config.lobby.channels[i].channel == channelname) {
                 for (let j = 0; j < lobbyjson.length; j++) {
                     if (lobbyjson[j].channel == channelname) {
                         let timeUsed = lobbyjson[j].time;

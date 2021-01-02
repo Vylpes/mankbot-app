@@ -43,15 +43,6 @@ class kick extends command {
                     if (context.message.guild.available) {
                         // If the bot client can kick the mentioned member
                         if (member.kickable) {
-                            // The embed to go into the bot log
-                            let embedLog = new MessageEmbed()
-                                .setTitle("Member Kicked")
-                                .setColor(embedColor)
-                                .addField("User", `${user} \`${user.tag}\``, true)
-                                .addField("Moderator", `${context.message.author} \`${context.message.author.tag}\``, true)
-                                .addField("Reason", reason || "*none*")
-                                .setThumbnail(user.displayAvatarURL);
-
                             // The embed to go into channel the command was sent in
                             let embedPublic = new MessageEmbed()
                                 .setColor(embedColor)

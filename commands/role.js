@@ -67,9 +67,9 @@ class role extends command {
                     }).catch(err => {
                         console.error(err);
 
-                        let errorEmbed = new MessageEmbed()
+                        let embed = new MessageEmbed()
                             .setColor(embedColor)
-                            .setDescription("An error occured. Please check logs");
+                            .setDescription("An error has occured");
 
                         context.message.channel.send(embed);
                     });
