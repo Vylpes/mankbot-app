@@ -2,7 +2,7 @@ const { event } = require('vylbot-core');
 const { readFileSync } = require('fs');
 
 const entry = "entry";
-const access = "access";
+const access = "Server Access";
 const codefile = "./data/code/code.txt";
 
 class message extends event {
@@ -11,7 +11,7 @@ class message extends event {
     }
 
     message(message) {
-        if (message.channel.bame == entry) {
+        if (message.channel.name == entry) {
             let entryCode = readFileSync(codefile).toString();
 
             if (message.content.toLowerCase() == entryCode.toLowerCase()) {
