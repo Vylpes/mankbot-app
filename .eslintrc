@@ -36,7 +36,8 @@
         ],
         "arrow-spacing": "error",
         "no-var": "error",
-        "prefer-template": "error"
+        "prefer-template": "error",
+        "prefer-const": "error"
     },
     "globals": {
         "exports": "writable",
