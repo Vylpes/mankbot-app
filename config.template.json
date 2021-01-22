@@ -97,5 +97,22 @@
     "Warn": {
         "modrole": "Server Staff",
         "logchannel": "warn-reason-list"
+    },
+    "role": {
+        "assignable": [
+            "MKT",
+            "MK8DX",
+            "MK8WiiU",
+            "MK7",
+            "MKW",
+            "MKDS",
+            "Splatoon1",
+            "Splatoon2",
+            "Smash3DS",
+            "SmashWiiU",
+            "SmashUltimate",
+            "Pokemon",
+            "Vent Access"
+        ]
     }
 }

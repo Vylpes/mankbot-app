@@ -29,7 +29,7 @@ class role extends command {
             // Loop through all the assignable roles and check against the first parameter
             // Save the role name if they match, i.e. the role can be assignable
             roles.forEach(role => {
-                if (role.toLowerCase() == context.arguments[0].toLowerCase()) {
+                if (role.toLowerCase() == context.arguments.join(" ").toLowerCase()) {
                     requestedRole = role;
                 }
             });
