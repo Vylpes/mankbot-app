@@ -14,7 +14,7 @@ class entry extends command {
     }
 
     entry(context) {
-        let embedInfo = new MessageEmbed()
+        const embedInfo = new MessageEmbed()
             .setColor(embedColor)
             .setDescription('Welcome to the server! Please make sure to read the rules in the #rules-and-info channel and type the code found there in here to proceed to the main part of the server.');
 
