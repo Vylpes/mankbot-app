@@ -19,9 +19,9 @@ class code extends command {
 
     code(context) {
         let result = "";
-        let characters = "abcdefghkmnpqrstuvwxyz23456789";
-        let resultLength = 5;
-        let charLength = characters.length;
+        const characters = "abcdefghkmnpqrstuvwxyz23456789";
+        const resultLength = 5;
+        const charLength = characters.length;
 
         for (let i = 0; i < resultLength; i++) {
             result += characters.charAt(Math.floor(Math.random() * charLength));
@@ -31,17 +31,17 @@ class code extends command {
 
         let txtRules = readFileSync(context.client.config.code.rulesfile).toString();
         let txtInfo = readFileSync(context.client.config.code.infofile).toString();
-        let entryCode = readFileSync(context.client.config.code.codefile).toString();
+        const entryCode = readFileSync(context.client.config.code.codefile).toString();
         
         txtRules = txtRules.replace('${CODE}', entryCode);
         txtInfo = txtInfo.replace('${CODE}', entryCode);
 
-        let embedRules = new MessageEmbed()
+        const embedRules = new MessageEmbed()
             .setTitle("Rules")
             .setColor(embedColor)
             .setDescription(txtRules);
 
-        let embedInfo = new MessageEmbed()
+        const embedInfo = new MessageEmbed()
             .setTitle("Other Info")
             .setColor(embedColor)
             .setDescription(txtInfo);

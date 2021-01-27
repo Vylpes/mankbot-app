@@ -21,16 +21,16 @@ class lobby extends command {
         // channelname: The channel name the command was sent in
         // lobbyfile: The json file containing the times the commands were last used in each channel
         // lobbyjson: The json file parsed into a readable json object
-        let channelname = context.message.channel.name;
-        let lobbyfile = readFileSync(context.client.config.lobby.lobbyfile);
-        let lobbyjson = JSON.parse(lobbyfile);
+        const channelname = context.message.channel.name;
+        const lobbyfile = readFileSync(context.client.config.lobby.lobbyfile);
+        const lobbyjson = JSON.parse(lobbyfile);
 
         // Loop through all the channels set as a game channel in the config
-        for (let i in context.client.config.lobby.channels) {
+        for (const i in context.client.config.lobby.channels) {
             // If the current channel matches the channel currently being checked
             if (context.client.config.lobby.channels[i].channel == channelname) {
                 // Loop through all the times in the lobby file
-                for (let j in lobbyjson) {
+                for (const j in lobbyjson) {
                     // If the current channel matches the channel currently being checked
                     if (lobbyjson[j].channel == channelname) {
                         // Channel variables
@@ -38,22 +38,22 @@ class lobby extends command {
                         // timeNow: The timestamp now
                         // timeLength: The cooldown, converted from minutes into milliseconds
                         // timeAgo: The cooldown minutes ago, i.e. the time currently which needs to be before the current time, meaning the cooldown is over
-                        let timeUsed = lobbyjson[j].time;
-                        let timeNow = Date.now();
-                        let timeLength = context.client.config.lobby.cooldown * 60 * 1000; // x minutes in ms
-                        let timeAgo = timeNow - timeLength;
+                        const timeUsed = lobbyjson[j].time;
+                        const timeNow = Date.now();
+                        const timeLength = context.client.config.lobby.cooldown * 60 * 1000; // x minutes in ms
+                        const timeAgo = timeNow - timeLength;
 
                         // If it was less than x minutes ago
                         if (timeUsed > timeAgo) {
                             // How much time is remaining on the cooldown, used for the cooldown text
-                            let timeLeft = Math.ceil((timeLength - (timeNow - timeUsed)) / 1000 / 60);
+                            const timeLeft = Math.ceil((timeLength - (timeNow - timeUsed)) / 1000 / 60);
 
                             // Reply letting the user know the command is in cooldown for the channel
                             context.message.reply(`Requesting a lobby for this game is on cooldown! Please try again in **${timeLeft} minutes**.`);
                         } else { // If it was more than x minutes ago, the cooldown is over
                             // Get the roleid for the ping and game name
-                            let roleID = context.client.config.lobby.channels[i].role;
-                            let gameName = context.client.config.lobby.channels[i].name;
+                            const roleID = context.client.config.lobby.channels[i].role;
+                            const gameName = context.client.config.lobby.channels[i].name;
 
                             // Set the time the command was last used to now and write it to the json file
                             lobbyjson[j].time = timeNow;

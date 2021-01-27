@@ -12,10 +12,10 @@ class message extends event {
 
     message(message) {
         if (message.channel.name == entry) {
-            let entryCode = readFileSync(codefile).toString();
+            const entryCode = readFileSync(codefile).toString();
 
             if (message.content.toLowerCase() == entryCode.toLowerCase()) {
-                let role = message.guild.roles.cache.find(role => role.name == access);
+                const role = message.guild.roles.cache.find(role => role.name == access);
 
                 message.member.roles.add(role).catch(err => {
                     console.log(err);

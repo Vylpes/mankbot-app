@@ -26,7 +26,7 @@ class about extends command {
     // The execution method
     about(context) {
         // Create an embed containing data about the bot
-        let embed = new MessageEmbed()
+        const embed = new MessageEmbed()
             .setTitle("About")
             .setColor(embedColor)
             .setDescription(context.client.config.about.description)

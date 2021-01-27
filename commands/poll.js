@@ -15,19 +15,19 @@ class poll extends command {
         // Get the command's arguments, and split them by a semicolon rather than a space
         // This allows the variables to be able to use spaces in them
         let args = context.arguments;
-        let argsJoined = args.join(' ');
+        const argsJoined = args.join(' ');
         args = argsJoined.split(';');
 
         // If the argument has 3 or more arguments and less than 11 arguments
         // This allows the title and 2-9 options
         if (args.length >= 3 && args.length < 11) {
             // Set the title to the first argument
-            let title = args[0];
+            const title = args[0];
             let optionString = "";
 
             // Array used to get the numbers as their words
             // arrayOfNumbers[n] = "n written in full words"
-            let arrayOfNumbers = [
+            const arrayOfNumbers = [
                 'zero',
                 'one',
                 'two',
@@ -48,7 +48,7 @@ class poll extends command {
             }
 
             // Create the embed with the title at the top of the description with the options below
-            let embed = new MessageEmbed()
+            const embed = new MessageEmbed()
                 .setColor(embedColor)
                 .setDescription(`**${title}**\n\n${optionString}`);
 
@@ -115,12 +115,12 @@ class poll extends command {
             // Delete the message
             context.message.delete();
         } else if (args.length >= 11) { // If the user inputted more than 9 options
-            let errorEmbed = new MessageEmbed()
+            const errorEmbed = new MessageEmbed()
                 .setDescription("The poll command can only accept up to 9 options");
 
             context.message.channel.send(errorEmbed);
         } else { // If the user didn't give enough data
-            let errorEmbed = new MessageEmbed()
+            const errorEmbed = new MessageEmbed()
                 .setDescription("Please use the correct usage: <title>;<option 1>;<option 2>... (separate options with semicolons)");
 
             context.message.channel.send(errorEmbed);

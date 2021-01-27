@@ -12,12 +12,12 @@ class guildmemberadd extends event {
     }
 
     guildmemberadd(member) {
-        let watchlistfile = readFileSync(watchlistpath);
-        let watchlist = JSON.parse(watchlistfile);
+        const watchlistfile = readFileSync(watchlistpath);
+        const watchlist = JSON.parse(watchlistfile);
 
         for (let i = 0; i < watchlist.length; i++) {
             if (member.user.tag.toLowerCase().includes(watchlist[i].user.toLowerCase())) {
-                let embed = new MessageEmbed()
+                const embed = new MessageEmbed()
                     .setTitle("Watchlisted Member Joined")
                     .setColor(embedColor)
                     .addField("User", `${member} \`${member.user.tag}\``)

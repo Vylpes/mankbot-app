@@ -25,28 +25,28 @@ class mute extends command {
         // Check if the user has the mod role
         if (context.message.member.roles.cache.find(role => role.name == context.client.config.mute.modrole)) {
             // Get the user first pinged in the message
-            let user = context.message.mentions.users.first();
+            const user = context.message.mentions.users.first();
 
             // If the user object exists
             if (user) {
                 // Get the guild member object of the mentioned user
-                let member = context.message.guild.member(user);
+                const member = context.message.guild.member(user);
 
                 // If the member object exists, i.e. if the user is in the server
                 if (member) {
                     // Get the part of the arguments array which contains the reason
-                    let reasonArgs = context.arguments;
+                    const reasonArgs = context.arguments;
                     reasonArgs.splice(0, 1);
 
                     // Join the reason into a string
-                    let reason = reasonArgs.join(" ");
+                    const reason = reasonArgs.join(" ");
 
                     // If the server is available
                     if (context.message.guild.available) {
                         // If the bot client can manage the user's roles
                         if (member.manageable) {
                             // The embed to go into the bot log
-                            let embedLog = new MessageEmbed()
+                            const embedLog = new MessageEmbed()
                                 .setTitle("Member Muted")
                                 .setColor(embedColor)
                                 .addField("User", `${user} \`${user.tag}\``, true)
@@ -55,18 +55,18 @@ class mute extends command {
                                 .setThumbnail(user.displayAvatarURL);
 
                             // The embed to go into the channel the command was sent in
-                            let embedPublic = new MessageEmbed()
+                            const embedPublic = new MessageEmbed()
                                 .setColor(embedColor)
                                 .setDescription(`${user} has been muted`);
 
                             // The embed to go into the muted channel
-                            let embedMuted = new MessageEmbed()
+                            const embedMuted = new MessageEmbed()
                                 .setColor(embedColor)
                                 .setDescription(`${user} has been muted`)
                                 .addField("Reason", reason || "*none*");
 
                             // Get the 'Muted' role
-                            let mutedRole = context.message.guild.roles.cache.find(role => role.name == context.client.config.mute.muterole);
+                            const mutedRole = context.message.guild.roles.cache.find(role => role.name == context.client.config.mute.muterole);
 
                             // Attempt to mute the user, if successful send the embeds, if not log the error
                             member.roles.add(mutedRole, reason).then(() => {
@@ -95,7 +95,7 @@ class mute extends command {
 
 // Send an embed when an error occurs
 function errorEmbed(context, message) {
-    let embed = new MessageEmbed()
+    const embed = new MessageEmbed()
         .setColor(embedColor)
         .setDescription(message);
 
