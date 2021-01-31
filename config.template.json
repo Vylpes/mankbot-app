@@ -73,9 +73,9 @@
     },
     "about": {
         "description": "Discord bot for Mankalor, based on VylBot",
-        "version": "2.0 Beta",
+        "version": "21.0.0",
         "author": "Vylpes",
-        "date": "20-Dec-20"
+        "date": "31-Jan-21"
     },
     "ban": {
         "modrole": "Server Staff",
@@ -112,7 +112,8 @@
             "SmashWiiU",
             "SmashUltimate",
             "Pokemon",
-            "Vent Access"
+            "Vent Access",
+            "Notification Squad"
         ]
     }
 }

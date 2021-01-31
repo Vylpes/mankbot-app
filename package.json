@@ -1,6 +1,6 @@
 {
   "name": "mankbot-app",
-  "version": "1.0.0",
+  "version": "21.0.0",
   "description": "",
   "main": "mankbot.js",
   "scripts": {
