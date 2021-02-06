@@ -10,7 +10,7 @@
         3a. This might not work on mobile.
         3b. We cannot assign SponSub roles manually.
 
-4. Mankalor will ping @ notificationsquad for new videos and streams in #new-videos-streams. If you want these pings, type !togglevideopings in #self-assign-roles
+4. Mankalor will ping @ notificationsquad for new videos and streams in #new-videos-streams. If you want these pings, type `m!role Notification Squad` in #self-assign-roles
         
 5. Server link in case you want to invite someone. This link is in the description of my videos, too: https://discord.gg/DQkWVbz
 
