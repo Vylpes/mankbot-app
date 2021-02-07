@@ -17,7 +17,7 @@
         "entrychannel": "entry"
     },
     "lobby": {
-        "lobbyfile": "data/lobby/lobby.json",
+        "lobbyfile": "data/lobby.json",
         "channels": [
             {
                 "name": "Mario Kart Tour",
@@ -73,9 +73,9 @@
     },
     "about": {
         "description": "Discord bot for Mankalor, based on VylBot",
-        "version": "21.0.0",
+        "version": "21.0.1",
         "author": "Vylpes",
-        "date": "31-Jan-21"
+        "date": "07-Feb-21"
     },
     "ban": {
         "modrole": "Server Staff",
