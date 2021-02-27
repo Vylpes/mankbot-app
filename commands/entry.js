@@ -11,12 +11,13 @@ class entry extends command {
         super.roles = "Server Staff";
 
         super.requiredConfigs = "entrychannel";
+        super.requiredConfigs = "rulesChannelId";
     }
 
     entry(context) {
         const embedInfo = new MessageEmbed()
             .setColor(embedColor)
-            .setDescription('Welcome to the server! Please make sure to read the rules in the #rules-and-info channel and type the code found there in here to proceed to the main part of the server.');
+            .setDescription(`Welcome to the server! Please make sure to read the rules in the <#${context.client.config.entry.rulesChannelId}> channel and type the code found there in here to proceed to the main part of the server.`);
 
         context.message.guild.channels.cache.find(channel => channel.name == context.client.config.entry.entrychannel).send(embedInfo);
 

@@ -14,7 +14,8 @@
         "ruleschannel": "rules-and-info"
     },
     "entry": {
-        "entrychannel": "entry"
+        "entrychannel": "entry",
+        "rulesChannelId": "501236836639703040"
     },
     "lobby": {
         "lobbyfile": "data/lobby.json",
