@@ -73,9 +73,9 @@
     },
     "about": {
         "description": "Discord bot for Mankalor, based on VylBot",
-        "version": "21.0.1",
+        "version": "2.0.1",
         "author": "Vylpes",
-        "date": "07-Feb-21"
+        "date": "19/03/21"
     },
     "ban": {
         "modrole": "Server Staff",
@@ -87,14 +87,14 @@
     "kick": {
         "modrole": "Server Staff"
     },
-    "Mute": {
+    "mute": {
         "modrole": "Server Staff",
         "logchannel": "mute-reason-list"
     },
-    "Unmute": {
+    "unmute": {
         "modrole": "Server Staff"
     },
-    "Warn": {
+    "warn": {
         "modrole": "Server Staff",
         "logchannel": "warn-reason-list"
     },
