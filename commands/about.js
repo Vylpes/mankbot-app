@@ -19,6 +19,7 @@ class about extends command {
         // date: Date of build
         super.requiredConfigs = "description";
         super.requiredConfigs = "version";
+        super.requiredConfigs = "core-ver";
         super.requiredConfigs = "author";
         super.requiredConfigs = "date";
     }
@@ -30,7 +31,8 @@ class about extends command {
             .setTitle("About")
             .setColor(embedColor)
             .setDescription(context.client.config.about.description)
-            .addField("Version", context.client.config.about.version)
+            .addField("Version", context.client.config.about.version, true)
+            .addField("VylBot Core", context.client.config.about['core-ver'], true)
             .addField("Author", context.client.config.about.author)
             .addField("Date", context.client.config.about.date);
 
