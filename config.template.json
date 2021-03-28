@@ -89,14 +89,14 @@
     "kick": {
         "modrole": "Server Staff"
     },
-    "Mute": {
+    "mute": {
         "modrole": "Server Staff",
         "logchannel": "mute-reason-list"
     },
-    "Unmute": {
+    "unmute": {
         "modrole": "Server Staff"
     },
-    "Warn": {
+    "warn": {
         "modrole": "Server Staff",
         "logchannel": "warn-reason-list"
     },
