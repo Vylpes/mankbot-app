@@ -75,7 +75,7 @@
     "about": {
         "description": "Discord bot for Mankalor, based on VylBot",
         "version": "2.1.0",
-        "core-ver": "1.0.4",
+        "corever": "1.0.4",
         "author": "Vylpes",
         "date": "22/03/21"
     },
