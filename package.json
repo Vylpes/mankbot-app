@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/Vylpes/mankbot-app#readme",
   "dependencies": {
-    "eslint": "^7.16.0",
+    "emoji-regex": "^8.0.0",
+    "eslint": "^7.23.0",
     "vylbot-core": "^1.0.4"
   }
 }
