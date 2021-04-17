@@ -16,6 +16,9 @@ class message extends event {
 
     // The event's run method
     message(message) {
+        // If the message is by a bot, ignore
+        if (message.author.bot) return;
+
         // If the channel is the entry channel, then check if the string sent is a valid entry code
         if (message.channel.name == entry) {
             // read the entry code from file
