@@ -19,6 +19,7 @@
     },
     "lobby": {
         "lobbyfile": "data/lobby.json",
+        "cooldown": 30,
         "channels": [
             {
                 "name": "Mario Kart Tour",
@@ -74,10 +75,10 @@
     },
     "about": {
         "description": "Discord bot for Mankalor, based on VylBot",
-        "version": "2.1.1",
+        "version": "2.1.2",
         "corever": "1.0.4",
         "author": "Vylpes",
-        "date": "17/04/21"
+        "date": "20/04/21"
     },
     "ban": {
         "modrole": "Server Staff",
