@@ -74,10 +74,10 @@
     },
     "about": {
         "description": "Discord bot for Mankalor, based on VylBot",
-        "version": "2.1.1",
+        "version": "2.2",
         "corever": "1.0.4",
         "author": "Vylpes",
-        "date": "17/04/21"
+        "date": "24/04/21"
     },
     "ban": {
         "modrole": "Server Staff",
@@ -117,5 +117,8 @@
             "Vent Access",
             "Notification Squad"
         ]
+    },
+    "maintenance": {
+        "entrychannel": "entry"
     }
 }
