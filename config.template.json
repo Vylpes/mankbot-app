@@ -19,6 +19,7 @@
     },
     "lobby": {
         "lobbyfile": "data/lobby.json",
+        "cooldown": 30,
         "channels": [
             {
                 "name": "Mario Kart Tour",
