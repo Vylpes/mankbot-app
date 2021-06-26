@@ -75,10 +75,10 @@
     },
     "about": {
         "description": "Discord bot for Mankalor, based on VylBot",
-        "version": "2.1.2",
+        "version": "2.1.3",
         "corever": "1.0.4",
         "author": "Vylpes",
-        "date": "20/04/21"
+        "date": "26/06/21"
     },
     "ban": {
         "modrole": "Server Staff",
