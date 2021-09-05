@@ -78,7 +78,7 @@
         "version": "2.2",
         "corever": "1.0.4",
         "author": "Vylpes",
-        "date": "24/04/21"
+        "date": "04/09/21"
     },
     "ban": {
         "modrole": "Server Staff",
@@ -92,10 +92,14 @@
     },
     "mute": {
         "modrole": "Server Staff",
-        "logchannel": "mute-reason-list"
+        "logchannel": "mute-reason-list",
+        "muterole": "Muted",
+        "mutechannel": "you-are-muted"
     },
     "unmute": {
-        "modrole": "Server Staff"
+        "modrole": "Server Staff",
+        "logchannel": "mute-reason-list",
+        "muterole": "Muted"
     },
     "warn": {
         "modrole": "Server Staff",
