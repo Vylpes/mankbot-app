@@ -75,10 +75,10 @@
     },
     "about": {
         "description": "Discord bot for Mankalor, based on VylBot",
-        "version": "2.1.3",
+        "version": "2.1.4",
         "corever": "1.0.4",
         "author": "Vylpes",
-        "date": "26/06/21"
+        "date": "04/09/21"
     },
     "ban": {
         "modrole": "Server Staff",
@@ -92,10 +92,14 @@
     },
     "mute": {
         "modrole": "Server Staff",
-        "logchannel": "mute-reason-list"
+        "logchannel": "mute-reason-list",
+        "muterole": "Muted",
+        "mutechannel": "you-are-muted"
     },
     "unmute": {
-        "modrole": "Server Staff"
+        "modrole": "Server Staff",
+        "logchannel": "mute-reason-list",
+        "muterole": "Muted"
     },
     "warn": {
         "modrole": "Server Staff",
@@ -118,5 +122,8 @@
             "Vent Access",
             "Notification Squad"
         ]
+    },
+    "maintenance": {
+        "entrychannel": "entry"
     }
 }
