@@ -30,3 +30,6 @@ Server Rules:
          9a. To access the vent channels, assign yourself the role from *#self-assign-roles*
          
     10. Do not ask to become a moderator.
+
+    11. Please don’t join to ask about how to download hacks, where to find them, etc. Requests will be ignored and if you continue to ask you will be muted.
+        11a. Watch Mankalor's video on it here: https://www.youtube.com/watch?v=wps_4DBlEyM
