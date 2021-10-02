@@ -20,4 +20,6 @@ If you notice anything wrong, notify the *Server Staff*!
 
 Once you've sent the code, go say hi in *#general-off-topic*!
 
+**Update 01 Oct 2021:** Added `11.` and `11a.` to rules
+
 **Entry Code: ${CODE}**
