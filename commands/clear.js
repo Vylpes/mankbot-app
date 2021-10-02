@@ -15,7 +15,6 @@ class clear extends command {
 
         // Set required configs in the config.clear json string
         super.requiredConfigs = "modrole";
-        super.requiredConfigs = "logchannel";
     }
 
     // Execute method
